@@ -1,3 +1,5 @@
 1485359747160,0,HTTP Request,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Expected closing bracket for IPv6 address at index 14: https://[http://192.168.11.8:8888]/spring-boot-web-thymeleaf-1.0/,Thread Group 1-1,text,false,,1176,0,1,1,0,0,0
 1485360908943,270,HTTP Request,200,OK,Thread Group 1-1,text,true,,1229,213,1,1,269,0,211
 1485360935277,9,HTTP Request,200,OK,Thread Group 1-1,text,true,,1229,213,1,1,8,0,1
+1485361539556,16,HTTP Request,200,OK,Thread Group 1-1,text,true,,1229,213,1,1,16,0,6
+1485361651147,23,HTTP Request,200,OK,Thread Group 1-1,text,true,,1229,213,1,1,23,0,7
