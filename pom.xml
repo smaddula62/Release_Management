@@ -74,7 +74,17 @@
                         <goals>
                             <goal>jmeter</goal>
                         </goals>
+                        <configuration>
+                           
+                            <ignoreResultFailures>true</ignoreResultFailures>
+                            <suppressJMeterOutput>false</suppressJMeterOutput>
+                            <propertiesUser>
 
+                                <threadNum>1</threadNum>
+                                <rampUpPeriodSecs>5</rampUpPeriodSecs>
+                                <loopCount>1</loopCount>
+                            </propertiesUser>
+                        </configuration>
                     </execution>
                 </executions>
                 <configuration>
