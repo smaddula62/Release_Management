@@ -6,7 +6,7 @@
     <artifactId>spring-boot-web-thymeleaf</artifactId>
     <packaging>war</packaging>
     <name>Spring Boot Web Example</name>
-    <description>Spring Boot Web Thymeleaf Example</description>
+    <description>Spring Boot Web Release management</description>
     <url>https://www.mkyong.com</url>
     <version>1.0</version>
 
