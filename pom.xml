@@ -18,6 +18,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+
     </properties>
 
     <dependencies>
@@ -68,7 +69,35 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.3</version>
             </plugin>
-
+            <plugin>
+                <groupId>com.lazerycode.jmeter</groupId>
+                <artifactId>jmeter-maven-plugin</artifactId>
+                <version>1.8.1</version>
+                <executions>
+                    <execution>
+                        <id>jmeter-tests</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>jmeter</goal>
+                        </goals>
+                        <configuration>
+                            <skipTests>true</skipTests> <!-- default true -->
+                            <ignoreResultFailures>true</ignoreResultFailures>
+                            <suppressJMeterOutput>false</suppressJMeterOutput>
+                            <propertiesUser>
+                                <testData>cal.csv</testData>
+                                <threadNum>1</threadNum>
+                                <rampUpPeriodSecs>5</rampUpPeriodSecs>
+                                <loopCount>1</loopCount>
+                            </propertiesUser>
+                        </configuration>
+                    </execution>
+                </executions>
+                <configuration>
+                    <testFilesDirectory>test</testFilesDirectory>
+                    <testResultsTimestamp>false</testResultsTimestamp>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
