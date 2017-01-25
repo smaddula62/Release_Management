@@ -7,7 +7,7 @@
     <packaging>war</packaging>
     <name>Spring Boot Web Thymeleaf Example</name>
     <description>Spring Boot Web Thymeleaf Example</description>
-    <url>https://www.mkyong.com</url>
+
     <version>1.1</version>
 
     <parent>
@@ -64,9 +64,23 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>3.3</version>
+                <groupId>com.lazerycode.jmeter</groupId>
+                <artifactId>jmeter-maven-plugin</artifactId>
+                <version>1.8.1</version>
+                <executions>
+                    <execution>
+                        <id>jmeter-tests</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>jmeter</goal>
+                        </goals>
+
+                    </execution>
+                </executions>
+                <configuration>
+                    <testFilesDirectory>test</testFilesDirectory>
+                    <testResultsTimestamp>false</testResultsTimestamp>
+                </configuration>
             </plugin>
 
         </plugins>
