@@ -10,6 +10,7 @@ public class SpringTest {
 		
 		WelcomeController welcomeController = new WelcomeController();
 
+        System.out.println("saikumar test case running /????????");
 		Assert.assertEquals("Welcome to MSS", welcomeController.messageGenerator("MSS"));
 		
 	}
