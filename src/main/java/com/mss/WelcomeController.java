@@ -20,6 +20,8 @@ public class WelcomeController {
 	}
 	
 	public String messageGenerator(String message) {
+
+		System.out.println("saikumar test case running /????????");
 		
 		return "Welcome to "+ message ;
 	}
