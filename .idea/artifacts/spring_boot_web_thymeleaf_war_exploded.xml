@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="spring-boot-web-thymeleaf:war exploded">
-    <output-path>$PROJECT_DIR$/target/spring-boot-web-thymeleaf-1.4</output-path>
+    <output-path>$PROJECT_DIR$/target/spring-boot-web-thymeleaf-1.5</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -48,7 +48,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/spring-boot-web-thymeleaf-1.4/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/spring-boot-web-thymeleaf-1.5/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="spring-boot-web-thymeleaf/web/Web" />
     </root>
